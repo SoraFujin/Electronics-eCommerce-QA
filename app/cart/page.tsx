@@ -47,11 +47,15 @@ const CartPage = () => {
                       <Image
                         width={192}
                         height={192}
+<<<<<<< HEAD
                         src={
                           product?.image
                             ? `/${product.image}`
                             : "/product_placeholder.jpg"
                         }
+=======
+                        src={product?.image ? `/${product.image}` : "/product_placeholder.jpg"}
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
                         alt="laptop image"
                         className="h-24 w-24 rounded-md object-cover object-center sm:h-48 sm:w-48"
                       />
@@ -65,7 +69,10 @@ const CartPage = () => {
                               <Link
                                 href={`#`}
                                 className="font-medium text-gray-700 hover:text-gray-800"
+<<<<<<< HEAD
                                 id="cartItemName"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
                               >
                                 {product.title}
                               </Link>

@@ -124,7 +124,10 @@ const AddNewProduct = () => {
               <span className="label-text">Product name:</span>
             </div>
             <input
+<<<<<<< HEAD
               name="product-name"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
               type="text"
               className="input input-bordered w-full max-w-xs"
               value={product?.title}
@@ -141,7 +144,10 @@ const AddNewProduct = () => {
               <span className="label-text">Product slug:</span>
             </div>
             <input
+<<<<<<< HEAD
               name="slug"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
               type="text"
               className="input input-bordered w-full max-w-xs"
               value={convertSlugToURLFriendly(product?.slug)}
@@ -161,7 +167,10 @@ const AddNewProduct = () => {
               <span className="label-text">Category:</span>
             </div>
             <select
+<<<<<<< HEAD
               name="category"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
               className="select select-bordered"
               value={product?.categoryId}
               onChange={(e) =>
@@ -184,7 +193,10 @@ const AddNewProduct = () => {
               <span className="label-text">Product price:</span>
             </div>
             <input
+<<<<<<< HEAD
               name="price"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
               type="text"
               className="input input-bordered w-full max-w-xs"
               value={product?.price}
@@ -200,7 +212,10 @@ const AddNewProduct = () => {
               <span className="label-text">Manufacturer:</span>
             </div>
             <input
+<<<<<<< HEAD
               name="manufacturer"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
               type="text"
               className="input input-bordered w-full max-w-xs"
               value={product?.manufacturer}
@@ -216,7 +231,10 @@ const AddNewProduct = () => {
               <span className="label-text">Is product in stock?</span>
             </div>
             <select
+<<<<<<< HEAD
               name="is-in-stock"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
               className="select select-bordered"
               value={product?.inStock}
               onChange={(e) =>
@@ -253,7 +271,10 @@ const AddNewProduct = () => {
               <span className="label-text">Product description:</span>
             </div>
             <textarea
+<<<<<<< HEAD
               name="description"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
               className="textarea textarea-bordered h-24"
               value={product?.description}
               onChange={(e) =>

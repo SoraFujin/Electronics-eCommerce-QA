@@ -30,9 +30,17 @@ const DashboardCreateNewUser = () => {
         };
         fetch(`http://localhost:3001/api/users`, requestOptions)
           .then((response) => {
+<<<<<<< HEAD
             if (response.status === 201) {
               return response.json();
             } else {
+=======
+            if(response.status === 201){
+              return response.json();
+
+            }else{
+              
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
               throw Error("Error while creating user");
             }
           })
@@ -43,8 +51,12 @@ const DashboardCreateNewUser = () => {
               password: "",
               role: "user",
             });
+<<<<<<< HEAD
           })
           .catch((error) => {
+=======
+          }).catch(error => {
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
             toast.error("Error while creating user");
           });
       } else {
@@ -66,7 +78,10 @@ const DashboardCreateNewUser = () => {
               <span className="label-text">Email:</span>
             </div>
             <input
+<<<<<<< HEAD
               name="email"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
               type="email"
               className="input input-bordered w-full max-w-xs"
               value={userInput.email}
@@ -83,7 +98,10 @@ const DashboardCreateNewUser = () => {
               <span className="label-text">Password:</span>
             </div>
             <input
+<<<<<<< HEAD
               name="password"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
               type="password"
               className="input input-bordered w-full max-w-xs"
               value={userInput.password}
@@ -100,7 +118,10 @@ const DashboardCreateNewUser = () => {
               <span className="label-text">User role: </span>
             </div>
             <select
+<<<<<<< HEAD
               name="role"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
               className="select select-bordered"
               defaultValue={userInput.role}
               onChange={(e) =>

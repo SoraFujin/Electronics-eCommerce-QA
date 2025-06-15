@@ -51,7 +51,10 @@ const DashboardNewCategoryPage = () => {
               <span className="label-text">Category name:</span>
             </div>
             <input
+<<<<<<< HEAD
               name="addCategory"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
               type="text"
               className="input input-bordered w-full max-w-xs"
               value={categoryInput.name}
