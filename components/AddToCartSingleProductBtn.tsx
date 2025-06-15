@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // *********************
 // Role of the component: Button for adding product to the cart on the single product page
 // Name of the component: AddToCartSingleProductBtn.tsx
@@ -21,16 +22,50 @@ const AddToCartSingleProductBtn = ({ product, quantityCount } : SingleProductBtn
   const { addToCart, calculateTotals } = useProductStore();
 
   const handleAddToCart = () => {
+=======
+"use client";
+
+import React from "react";
+import { useProductStore } from "@/app/_zustand/store";
+import toast from "react-hot-toast";
+import { useSession } from "next-auth/react";
+
+const AddToCartSingleProductBtn = ({
+  product,
+  quantityCount,
+}: SingleProductBtnProps) => {
+  const { addToCart, calculateTotals } = useProductStore();
+  const { data: session, status } = useSession();
+
+  const handleAddToCart = () => {
+    if (status === "loading") return; // wait for auth status to resolve
+
+    if (!session) {
+      toast.error("You need to be logged in to add a product to the cart");
+      return;
+    }
+
+>>>>>>> 1212d359a3aed886c81341200016acfb56a61a73
     addToCart({
       id: product?.id.toString(),
       title: product?.title,
       price: product?.price,
       image: product?.mainImage,
+<<<<<<< HEAD
       amount: quantityCount
     });
     calculateTotals();
     toast.success("Product added to the cart");
   };
+=======
+      amount: quantityCount,
+    });
+
+    calculateTotals();
+    toast.success("Product added to the cart");
+  };
+
+>>>>>>> 1212d359a3aed886c81341200016acfb56a61a73
   return (
     <button
       onClick={handleAddToCart}
