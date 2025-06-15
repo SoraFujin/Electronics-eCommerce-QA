@@ -129,6 +129,9 @@ const AddToWishlistBtn = ({ product, slug }: AddToWishlistBtnProps) => {
         >
           <FaHeart className="text-xl text-custom-black" />
           <span className="text-lg">ADD TO WISHLIST</span>
+          <span id="addToWishlist" className="text-lg">
+            ADD TO WISHLIST
+          </span>
         </p>
       )}
     </>

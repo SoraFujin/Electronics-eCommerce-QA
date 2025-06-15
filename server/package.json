@@ -17,5 +17,12 @@
     "mysql": "^2.18.1",
     "nanoid": "^5.0.6",
     "prisma": "^5.12.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "eslint": "^9.27.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.1.0",
+    "typescript-eslint": "^8.32.1"
   }
 }

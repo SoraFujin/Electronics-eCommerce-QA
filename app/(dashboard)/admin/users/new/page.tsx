@@ -30,11 +30,23 @@ const DashboardCreateNewUser = () => {
         };
         fetch(`http://localhost:3001/api/users`, requestOptions)
           .then((response) => {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            if (response.status === 201) {
+              return response.json();
+            } else {
+=======
+>>>>>>> furat
             if(response.status === 201){
               return response.json();
 
             }else{
               
+<<<<<<< HEAD
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
+>>>>>>> furat
               throw Error("Error while creating user");
             }
           })
@@ -45,7 +57,16 @@ const DashboardCreateNewUser = () => {
               password: "",
               role: "user",
             });
+<<<<<<< HEAD
           }).catch(error => {
+=======
+<<<<<<< HEAD
+          })
+          .catch((error) => {
+=======
+          }).catch(error => {
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
+>>>>>>> furat
             toast.error("Error while creating user");
           });
       } else {
@@ -67,6 +88,13 @@ const DashboardCreateNewUser = () => {
               <span className="label-text">Email:</span>
             </div>
             <input
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              name="email"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
+>>>>>>> furat
               type="email"
               className="input input-bordered w-full max-w-xs"
               value={userInput.email}
@@ -83,6 +111,13 @@ const DashboardCreateNewUser = () => {
               <span className="label-text">Password:</span>
             </div>
             <input
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              name="password"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
+>>>>>>> furat
               type="password"
               className="input input-bordered w-full max-w-xs"
               value={userInput.password}
@@ -99,6 +134,13 @@ const DashboardCreateNewUser = () => {
               <span className="label-text">User role: </span>
             </div>
             <select
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              name="role"
+=======
+>>>>>>> 94f8b5a9d6906132aef0d76fdcc913fec6e3b571
+>>>>>>> furat
               className="select select-bordered"
               defaultValue={userInput.role}
               onChange={(e) =>
